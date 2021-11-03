@@ -1,30 +1,21 @@
+/** 
+ * Overall, this is really well executed. As a challenge, you may want to consider re-prompting for a password if it is incorrect.
+ * Same with an incorrect menu choice. What would/should happen if they entered a 0 or an 8?
+*/
 
 package tangleOfStrings;
 import java.util.Scanner;
 
-public class TangleofStringies {
+public class TangleOfStrings {
 	public static Scanner input = new Scanner (System.in);
 	
 	public static void main(String[] args) {
-		
-		
 		input.useDelimiter(System.lineSeparator());
-		
-	
-		
 		myPassword();
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		input.close();
 	}
 
-	
 	public static void myPassword() {
 		System.out.print("Input Password: ");
 		String password = "";
@@ -106,6 +97,8 @@ public static void backwards() {
 		word = input.next();
 		int amountOfVowels=0;
 		word.toLowerCase();
+		
+		// Formatting this for loop and if statement
 		for (int i = 0; i< (word.length()); i++) {
 		if (word.charAt(i) == 'a'||word.charAt(i)== 'e'||word.charAt(i)=='i'||word.charAt(i)=='o'||word.charAt(i)=='u') {
 			
@@ -183,9 +176,10 @@ public static void backwards() {
 					System.out.println(subword);
 				}
 			}	
-			}}
+			}
+		}
 	
-	
+}
 	
 	
 	
