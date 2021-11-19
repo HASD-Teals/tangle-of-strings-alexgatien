@@ -3,7 +3,7 @@ package tangleOfStrings;
 
 import java.util.Scanner;
 
-public class TangleofStrings {
+public class TangleOfStrings {
 	public static Scanner input = new Scanner(System.in);
 	
 	public static void main(String[] args) {
@@ -102,10 +102,12 @@ public class TangleofStrings {
 		System.out.println();
 	}
 
+
 	public static void vowels() {
 		String word = "";
 		word = input.next();
-		int amountOfVowels = 0;
+		int amountOfVowels = 0; 
+		//Set word equal to Word Lower Case
 		word.toLowerCase();
 		for (int i = 0; i < (word.length()); i++) {
 			if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'i' || word.charAt(i) == 'o'
